@@ -55,7 +55,7 @@ class Auth {
 }
 
 const configAuth = {
-  url: 'https://api.easyjet.nomoredomains.work',
+  url: 'http://api.easyjet.nomoredomains.work',
 };
 
 const auth = new Auth(configAuth);
