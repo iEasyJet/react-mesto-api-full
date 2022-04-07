@@ -1,0 +1,11 @@
+.header__box{
+    display: flex;
+    gap: 24px;
+    align-items: baseline;
+}
+
+@media (max-width: 320px) {
+    .header__box {
+        align-items: baseline;
+    }
+}

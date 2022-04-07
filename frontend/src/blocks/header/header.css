@@ -1,0 +1,25 @@
+.header {
+  padding: 0 0 41px 0;
+  margin-bottom: 40px;
+
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 680px) {
+  .header {
+    width: 100%;
+    padding: 0 0 31px 0;
+    margin-bottom: 42px;
+
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    width: 320px;
+    position: relative;
+    left: -20px;
+  }
+}

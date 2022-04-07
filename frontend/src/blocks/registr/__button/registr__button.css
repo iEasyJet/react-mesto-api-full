@@ -1,0 +1,19 @@
+.registr__button {
+  border: none;
+  background-color: black;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: #ffffff;
+  transition: all linear 0.2s;
+}
+.registr__button:hover {
+  opacity: 0.6;
+
+  cursor: pointer;
+}

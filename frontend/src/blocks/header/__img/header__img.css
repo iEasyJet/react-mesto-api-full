@@ -1,0 +1,23 @@
+.header__img {
+  display: block;
+  transition: all 0.2s linear;
+}
+
+.header__img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .header__img {
+    width: 104px;
+    height: 24px;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__img {
+    margin-left: 28px;
+  }
+}

@@ -1,0 +1,14 @@
+.profile__box {
+  display: flex;
+  column-gap: 30px;
+  width: 486px;
+}
+
+@media (max-width: 680px) {
+  .profile__box {
+    margin: 0 auto;
+    flex-direction: column;
+
+    width: 100%;
+  }
+}

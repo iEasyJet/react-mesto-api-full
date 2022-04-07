@@ -1,0 +1,25 @@
+.card__like {
+  display: flex;
+  padding: 0;
+  margin: 0 0 0;
+  width: 22px;
+  height: 35px;
+  border: 0;
+  background: url(../../../images/card/like.svg) 0 0 no-repeat;
+
+  flex-direction: column;
+  justify-content: flex-end;
+
+
+  transition: all 0.2s linear;
+}
+
+.card__like:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.card__like:active {
+  background: url(../../../images/card/blackLike.svg) 0 0 no-repeat;
+
+}

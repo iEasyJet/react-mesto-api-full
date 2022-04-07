@@ -1,0 +1,18 @@
+.infoTooltip__text {
+  max-width: 300px;
+  align-self: center;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #000000;
+}
+@media (max-width: 550px) {
+  .infoTooltip__text {
+    font-size: 20px;
+  }
+}

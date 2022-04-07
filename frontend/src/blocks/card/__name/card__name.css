@@ -1,0 +1,7 @@
+.card__name {
+  display: flex;
+  justify-content: space-between;
+
+  width: 241px;
+  margin: 24px auto 0;
+}

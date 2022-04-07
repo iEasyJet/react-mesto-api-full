@@ -1,0 +1,24 @@
+.infoTooltip__close {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: -40px;
+  right: -40px;
+  border: 0;
+  background: url(../../../images/popup/close.svg) center/ cover no-repeat;
+
+  transition: all 0.2s linear;
+}
+.infoTooltip__close:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+@media (max-width: 550px) {
+  .infoTooltip__close {
+    width: 20px;
+    height: 20px;
+    top: -35px;
+    right: 0;
+  }
+}

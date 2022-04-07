@@ -1,0 +1,18 @@
+.profile__pencil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: url(../../../images/profile/pencil.svg) center / 26px no-repeat, rgba(0, 0, 0, 0.8);
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.profile__pencil:hover {
+  opacity: 1;
+}

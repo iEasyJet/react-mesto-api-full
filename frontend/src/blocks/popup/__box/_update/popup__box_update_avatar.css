@@ -1,0 +1,12 @@
+.popup__box_update_avatar {
+  min-height: 272px;
+}
+
+@media (max-width: 550px) {
+  .popup__box_update_avatar {
+    width: 282px;
+    min-height: 272px;
+    top: calc(50% - 161px);
+    left: calc(50% - 141px);
+  }
+}

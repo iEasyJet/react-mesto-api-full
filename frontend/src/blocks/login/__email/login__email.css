@@ -1,0 +1,16 @@
+.login__email {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  background-color: black;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}

@@ -1,0 +1,11 @@
+.popup__box_delete_card {
+  width: 430px;
+  height: 181px;
+  min-height: 0;
+}
+
+@media (max-width: 550px) {
+  .popup__box_delete_card {
+    width: 282px;
+  }
+}

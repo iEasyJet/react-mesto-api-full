@@ -1,0 +1,8 @@
+.popup__pic-box {
+  max-width: 75vw;
+  max-height: 75vh;
+
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+}
