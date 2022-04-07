@@ -20,15 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose.connect('mongodb://localhost:27017/mestodb');
 
-const allowedCors = [
-  'https://easyjet.nomoredomains.work',
-  'http://easyjet.nomoredomains.work',
-  'localhost:3000',
-];
-
-app.use(cors({
-  origin: allowedCors,
-}));
+app.use(cors());
 
 app.use(requestLogger);
 
