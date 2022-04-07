@@ -82,6 +82,15 @@ function App() {
       .then((res) => {
         localStorage.setItem('jwt', res.token);
         setLoggedIn(true);
+        api.getUserUnfo(res.token)
+          .then((res) => {
+            setUserInfo(res.user.email);
+            setCurrentUser(res.user);
+        })
+        api.getInitalCards(res.token)
+          .then((res) => {
+            setCards(res.cards.reverse());
+        })
         history.push('/');
       })
       .catch((err) => {
