@@ -97,7 +97,7 @@ class Api {
 }
 
 const configApi = {
-  url: 'http://api.easyjet.nomoredomains.work'
+  url: 'https://api.easyjet.nomoredomains.work'
 };
 
 const api = new Api(configApi);
