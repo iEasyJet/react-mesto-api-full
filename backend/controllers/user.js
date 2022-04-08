@@ -1,4 +1,4 @@
-const { CRYPTO_KEY } = process.env;
+const { NODE_ENV, CRYPTO_KEY } = process.env;
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
@@ -60,7 +60,7 @@ const postUser = (req, res, next) => {
 const findUser = (req, res, next) => {
   const { authorization } = req.headers;
   const token = authorization.replace('Bearer ', '');
-  const _id = jwt.verify(token, CRYPTO_KEY);
+  const _id = jwt.verify(token, NODE_ENV === 'production' ? CRYPTO_KEY : 'dev-secret');
   User.findById(_id)
     .orFail(() => {
       next(new NotFoundError('Нет пользователя с переданным id'));
@@ -136,7 +136,7 @@ const login = (req, res, next) => {
         });
     })
     .then((user) => {
-      const token = jwt.sign({ _id: user._id }, CRYPTO_KEY, { expiresIn: '7d' });
+      const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? CRYPTO_KEY : 'dev-secret', { expiresIn: '7d' });
       req.user = user._id;
       res.send({ token });
     })

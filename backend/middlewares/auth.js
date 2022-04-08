@@ -1,4 +1,4 @@
-const { CRYPTO_KEY } = process.env;
+const { NODE_ENV, CRYPTO_KEY } = process.env;
 const jwt = require('jsonwebtoken');
 const Unauthorized = require('../errors/Unauthorized');
 
@@ -12,7 +12,7 @@ const auth = (req, res, next) => {
   const token = authorization.replace('Bearer ', '');
   let _id;
   try {
-    _id = jwt.verify(token, CRYPTO_KEY);
+    _id = jwt.verify(token, NODE_ENV === 'production' ? CRYPTO_KEY : 'dev-secret');
   } catch (err) {
     return next(new Unauthorized('Необходима авторизация'));
   }
