@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('dotenv').config();
-const cors = require('cors');
+const corsHandler = require('./middlewars/corsHandler');
 const { errors } = require('celebrate');
 const user = require('./routes/user');
 const card = require('./routes/card');
@@ -11,7 +11,7 @@ const auth = require('./middlewares/auth');
 const { postUserValidation, loginValidation } = require('./middlewares/validation');
 const NotFoundError = require('./errors/NotFoundError');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
-/* const { cors } = require('./middlewares/cors'); */
+
 
 const app = express();
 
@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose.connect('mongodb://localhost:27017/mestodb');
 
-app.use(cors());
+app.use(corsHandler());
 
 app.use(requestLogger);
 
@@ -57,7 +57,7 @@ app.use((err, req, res, next) => {
   console.log(err);
 });
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3001 } = process.env;
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`App listening on port ${PORT}`);

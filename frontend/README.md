@@ -28,6 +28,4 @@
 
 ### `Статус проекта:` <kbd>Сдан</kbd>
 
-`Домен easyjet.nomoredomains.work`
-
 [Репозиторий](https://github.com/iEasyJet/react-mesto-api-full)

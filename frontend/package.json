@@ -1,5 +1,6 @@
 {
   "name": "mesto-react",
+  "homepage": "https://iEasyJet.github.io/react-mesto-api-full",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
