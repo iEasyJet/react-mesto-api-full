@@ -1,4 +1,4 @@
-# #5 "Mesto на React" <kbd>Яндекс.Практикум</kbd>
+# "Mesto на React" <kbd>Яндекс.Практикум</kbd>
 
 ## Описание проекта:
 
@@ -29,3 +29,5 @@
 ### `Статус проекта:` <kbd>Сдан</kbd>
 
 [Репозиторий](https://github.com/iEasyJet/react-mesto-api-full)
+
+[gh-pages](https://ieasyjet.github.io/mesto-react-pages/#/sign-up)
