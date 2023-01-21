@@ -28,6 +28,6 @@
 
 ### `Статус проекта:` <kbd>Сдан</kbd>
 
-`Домен api.easyjet.nomoredomains.work`
+[gh-pages](https://ieasyjet.github.io/mesto-react-pages/#/sign-up)
 
 [Репозиторий](https://github.com/iEasyJet/react-mesto-api-full)
