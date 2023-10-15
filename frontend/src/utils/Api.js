@@ -97,7 +97,7 @@ class Api {
 }
 
 const configApi = {
-  url: 'https://api.easyjet.nomoredomains.work'
+  url: 'https://api.mesto-react.nomoredomainsrocks.ru'
 };
 
 const api = new Api(configApi);
