@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('dotenv').config();
-const corsHandler = require('./middlewars/corsHandler');
+const corsHandler = require('./middlewares/corsHandler');
 const { errors } = require('celebrate');
 const user = require('./routes/user');
 const card = require('./routes/card');
